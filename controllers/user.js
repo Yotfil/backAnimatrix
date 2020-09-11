@@ -23,7 +23,7 @@ function create(req, res) {
     user.firstName = params.firstName
     user.lastname = params.lastname
     user.email = params.email.toLowerCase()
-    user.role = 'ROLE_ADMIN'
+    user.role = 'ROLE_USER'
     user.image = 'null'
 
     if (params.password) {

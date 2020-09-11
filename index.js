@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'); //Requerimos mongoose para conectarnos con la base de datos
 const app = require('./app'); //Requerimos nuestra app que configuramos en le archivo app.js
-const {PORT} = process.env;
+const { PORT } = process.env;
 const port = 3000;
 
 mongoose.set('useFindAndModify', false);
@@ -13,8 +13,8 @@ mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true }, (err,
         console.log('No nos pudimos conectar');
     } else {
         console.log('La base de datos funciona!');
-        app.listen(PORT, () => {
-            console.log(`El demonio está vigilando en el puerto ${PORT}`)
+        app.listen(port, () => {
+            console.log(`El demonio está vigilando en el puerto ${port}`)
         })
     }
 })
