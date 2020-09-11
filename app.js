@@ -14,9 +14,6 @@ const serie_routes = require('./routes/serie')
 
 
 
-
-
-
 //middleware
 app.use('/api', user_routes)
 app.use('/api', song_routes)
