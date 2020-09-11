@@ -4,10 +4,10 @@ const port = 3000;
 
 mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
+const URI = "mongodb+srv://animatrix:animatrix@animatrixdb.synvy.mongodb.net/animatrixdb?retryWrites=true&w=majority"
 
 
-
-mongoose.connect('mongodb://localhost:27017/animatrixdb', { useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
+mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
     if (err) {
         console.log('No nos pudimos conectar');
     } else {
