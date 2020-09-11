@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'); //Requerimos mongoose para conectarnos con la base de datos
 const app = require('./app'); //Requerimos nuestra app que configuramos en le archivo app.js
-const port = 3000;
+const port = 8080;
 
 mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
